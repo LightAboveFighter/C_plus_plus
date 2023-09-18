@@ -1,69 +1,81 @@
 #include <std_lib_facilities.h>
 
-void Interface(vector<int> n_rocks) {
-    int n_lines = int( n_rocks.size() );
-    for (int i = 0; i < 4; ++i) {
-        std::cout << std::endl;
-    }
+void Interface(vector<unsigned int> n_rocks) {
+    unsigned int n_lines = int( n_rocks.size() );
+    //std::cout << std::endl;
     std::cout << "============================================================" << std::endl;
     std::cout << "String's number                                Rock's number" << std::endl;
-    for (int i = 0; i < n_lines; ++i) {
+    for (unsigned int i = 0; i < n_lines; ++i) {
         std::cout << " " <<i+1<<"|  [";
-        for (int k = 0; k < n_rocks[i]; ++k ) {
+        for (unsigned int k = 0; k < n_rocks[i]; ++k ) {
             std::cout << " " << "* ";
         }
-        for (int k = 0; k < 3*(15 - n_rocks[i]); ++k ) {
+        for (unsigned int k = 0; k < 3*(15 - n_rocks[i]); ++k ) {
             std::cout << " ";
         }
         std::cout << " |" << n_rocks[i] << std::endl;
     }
     std::cout << "============================================================" << std::endl;
-    //std::cout << "-------Enter string and rocks(<16) number with space--------" << std::endl;
 }
 
-vector<int> Opponent(vector<int> n_rocks) {
-    int n_lines = int( n_rocks.size() );
-    vector<int> n_try_rocks = n_rocks;
-    int nim_sum = n_rocks[ int(n_rocks.size() - 1)];
+vector<unsigned int> Opponent(vector<unsigned int> n_rocks) {
+    unsigned int n_lines = int( n_rocks.size() );
+    vector<unsigned int> n_try_rocks;
+    unsigned int nim_sum;
 
-    for (int i = 0; i < n_lines; ++i ) {
-        for (int k = 1; k < n_rocks[i]+1; ++k ) {
-
-            n_try_rocks[i] = k;
-            if ( i == int( n_rocks.size() ) ) {
-                nim_sum = k;
+    for (unsigned int i = 0; i < n_lines; ++i ) {
+        for (unsigned int k = n_rocks[i]; k > 0; --k ) {
+            n_try_rocks = n_rocks;
+            n_try_rocks[i] -= k;
+            nim_sum = 0;
+            //nim_sum = n_try_rocks[0];
+            for (unsigned int j = 0; j < n_lines-1; ++j ) {
+                nim_sum = nim_sum ^ n_try_rocks[j];
             };
-            for (int j = 0; j < n_lines-1; ++j ) {
-                nim_sum = nim_sum ^ n_try_rocks[i];
-            };
-            if (nim_sum == 0) {
-                return {i, n_rocks[i] - k};
+            if ( nim_sum == 0 ) {
+                //std::cout << i << " " << k << " " << nim_sum  std::endl;
+                return {i, k};
             };
         }
+    };
+    for (unsigned int i = 0; i < n_lines; ++i ) {
+        if ( n_rocks[i] != 0 ) {
+            return {i, 1};
+        }
     }
+
 }
 
-vector<int> Step(vector<int> line_rocks, vector<int> n_rocks ) {
+// int nim_sum(vector<unsigned int> n_rocks) {
+//     unsigned int nim_sum = n_rocks[0];
+//     unsigned int n_lines = int( n_rocks.size() );
+//     for (unsigned int j = 0; j < n_lines-1; ++j ) {
+//         nim_sum = nim_sum ^ n_rocks[i];
+//     }
+// }
+
+vector<unsigned int> Step(vector<unsigned int> line_rocks, vector<unsigned int> n_rocks ) {
     n_rocks[ line_rocks[0] ] -= line_rocks[1] ;
     return n_rocks;
 };
 
-bool End(vector<int> n_rocks) {
+bool End(vector<unsigned int> n_rocks) {
+    unsigned int line_rocks = int( n_rocks.size() );
     bool Check = 0;
-    for (int i = 0; i < int ( n_rocks.size() ); ++i ) {
+    for (unsigned int i = 0; i < line_rocks ; ++i ) {
         Check = Check || ( n_rocks[i] != 0);
     };
     return !Check;
 };
 
 int main() {
-    vector<int> Rocks_num;
-    int n_lines;
+    vector<unsigned int> Rocks_num;
+    unsigned int n_lines;
     std::cout <<     "-------Enter string and rocks(<16) number with space--------" << std::endl;
     cin >> n_lines;
-    int num;
+    unsigned int num;
 
-    for (int i = 0; (i < n_lines); ++i) {
+    for (unsigned int i = 0; (i < n_lines); ++i) {
         cin >> num;
         Rocks_num.push_back(num);
     }
@@ -75,8 +87,8 @@ int main() {
     }
     Interface(Rocks_num);
 
-    vector<int> Steps (2);
-    while ( num != -1) {
+    vector<unsigned int> Steps (2);
+    while ( num != 3) {
         if ( num == 1) {
             std::cout <<     "-------Enter string and rocks(<16) number with space--------" << std::endl;
             cin >> Steps[0] >> Steps[1];
@@ -86,7 +98,7 @@ int main() {
             Interface( Rocks_num );
             if ( End(Rocks_num) ) {
                 std::cout << "You are winner!" << std::endl;
-                num = -1;
+                num = 3;
             }
             else {
                 num = 2;
@@ -101,7 +113,7 @@ int main() {
             std::cout << "Opponent's step: " << Steps[0] + 1 << " " << Steps[1] << std::endl;
             if ( End(Rocks_num) ) {
                 std::cout << "You lose:(" << std::endl;
-                num = -1;
+                num = 3;
             }
             else {
                 num = 1;
