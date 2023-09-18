@@ -27,9 +27,9 @@ vector<unsigned int> Opponent(vector<unsigned int> n_rocks) {
         for (unsigned int k = n_rocks[i]; k > 0; --k ) {
             n_try_rocks = n_rocks;
             n_try_rocks[i] -= k;
-            nim_sum = 0;
-            //nim_sum = n_try_rocks[0];
-            for (unsigned int j = 0; j < n_lines-1; ++j ) {
+            //nim_sum = 0;
+            nim_sum = n_try_rocks[0];
+            for (unsigned int j = 1; j < n_lines; ++j ) {
                 nim_sum = nim_sum ^ n_try_rocks[j];
             };
             if ( nim_sum == 0 ) {
