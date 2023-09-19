@@ -1,10 +1,20 @@
 #include <std_lib_facilities.h>
 
-int main() {
-    vector<int> p = {5, 6, 9, 12, 14, 2}; //13 0 9 1 2 2
-    int n = 0;
-    for (int j = 0; j < 6; ++j ) {
-        n = n ^ p[j];
+int check_input() {
+    int number;
+    cin >> number;
+    if (!cin) {
+        std::cout << "Incorrect value, try again" << std::endl;
+        cin >> number;
+        return check_input();
     }
-    std::cout << n;
+    else {
+        return number;
+    }
+}
+
+int main() {
+    int p;
+    p = check_input();
+    std::cout << p << std::endl;
 }

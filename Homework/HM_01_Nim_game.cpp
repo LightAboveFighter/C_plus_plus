@@ -1,7 +1,13 @@
 #include <std_lib_facilities.h>
 
+enum game_turn {  
+    Computer,
+    Player,
+    End_game
+};
+
 vector<int> Errors(vector<int> Rocks_num) {
-    vector<int> Input (2);
+    vector<int> Input (2); //пара чисел на ввод
     cin >> Input[0] >> Input[1];
     while ( Input[0] <= 0 || Rocks_num[Input[0]-1] < Input[1]) {
         std::cout << "Incorrect value, please try again" << std::endl;
@@ -11,6 +17,8 @@ vector<int> Errors(vector<int> Rocks_num) {
 }
 
 void Interface(vector<int> n_rocks) {  //интерфейс игры
+    constexpr int max_len = 15;
+    constexpr int s_to_sp_symbol = 3; //len_* + len+space/len_space
     int n_lines = int( n_rocks.size() ); //отображаем кучки камней
     std::cout << "============================================================" << std::endl;
     std::cout << "String's number                                Rock's number" << std::endl;
@@ -19,7 +27,7 @@ void Interface(vector<int> n_rocks) {  //интерфейс игры
         for (int k = 0; k < n_rocks[i]; ++k ) {
             std::cout << " " << "* ";
         }
-        for (int k = 0; k < 3*(15 - n_rocks[i]); ++k ) {
+        for (int k = 0; k < s_to_sp_symbol*(max_len - n_rocks[i]); ++k ) {
             std::cout << " ";
         }
         std::cout << " |" << n_rocks[i] << std::endl;
@@ -36,7 +44,7 @@ int Nim(vector<int> n_rocks) {  //вычисляем XOR сумму для ка�
     return nim_sum;
 }
 
-vector<int> Computer(vector<int> n_rocks) {  //Просчитываем наилучший ход
+vector<int> Computer_bot(vector<int> n_rocks) {  //Просчитываем наилучший ход
     int n_lines = int( n_rocks.size() );              // для компьютера
     vector<int> n_try_rocks;
     int nim_sum;
@@ -73,40 +81,39 @@ bool End(vector<int> n_rocks) {  //проверка на конец игры
     return !Check;   
 };
 
-void game_process(int num, vector<int> Rocks_num) {
+void game_process(game_turn num, vector<int> Rocks_num) {
     vector<int> Steps (2);
 
-    while ( num != 3) {
-        if ( num == 1) {
+    while ( num != End_game) {
+        if ( num == Player) {
             std::cout <<     "-------Enter string and rocks(<16) number with space--------" << std::endl;
-            //cin >> Input[0] >> Input[1];
             Steps = Errors(Rocks_num);
             --Steps[0];
             Rocks_num = Step(Steps, Rocks_num);
+            std::cout << "\e[1;1H\e[2J";
             std::cout << "Your turn:" << std::endl;
             Interface( Rocks_num );
             if ( End(Rocks_num) ) {  //Конец? Если да - определяем победителя 
                 std::cout << "You are winner!" << std::endl; //и выходим из цикла
-                num = 3;
+                num = End_game;
             }
             else {
-                num = 2;
+                num = Computer;
             }
-            std::cout << "\e[1;1H\e[2J";
 
             continue;
         }
-        else if ( num == 2) {
-            Steps = Computer(Rocks_num); //записываем в ходы решение компьютера
+        else if ( num == Computer) {
+            Steps = Computer_bot(Rocks_num); //записываем в ходы решение компьютера
             Rocks_num = Step(Steps, Rocks_num);
             Interface( Rocks_num );
             std::cout << "Computer's step: " << Steps[0] + 1 << " " << Steps[1] << std::endl;
             if ( End(Rocks_num) ) {    //Конец? Если да - определяем победителя
                 std::cout << "You lose:(" << std::endl;  //и выходим из цикла
-                num = 3;
+                num = End_game;
             }
             else {
-                num = 1;
+                num = Player;
             }
 
             continue;
@@ -114,33 +121,34 @@ void game_process(int num, vector<int> Rocks_num) {
     }
 }
 
-
-
 int main() {
     vector<int> Rocks_num;
     int n_lines;
-    vector<int> Input;
+    //vector<int> Input;
+    int value; // вспомогательная переменная
     std::cout <<     "-------Enter string and rocks(<16) number with space--------" << std::endl;
     cin >> n_lines;
     while ( n_lines <= 0 ) {
         std::cout << "Incorrect value, please try again, continue typing" << std::endl;
         cin >> n_lines;
     }
-    int num;
+    game_turn num;
     
     for (int i = 0; (i < n_lines); ++i) {
-        while ( cin >> num && num <= 0 ) {
+        while ( cin >> value && ( value <= 0 || value > 15)) {
             std::cout << "Incorrect value, please try again, continue typing" << std::endl;
         };
-        Rocks_num.push_back(num);
+        Rocks_num.push_back(value);
     }
-    std::cout << "Who will start? Enter 1 - you, 2 - Computer" << std::endl;
-    cin >> num;
-    while ( num != 1 && num != 2) {
-        std::cout << "Try again" << std::endl;
-        cin >> num;
-    }
-    Interface(Rocks_num);
+    std::cout << "Who will start, Computer(1) or Player(2) ?" << std::endl;
 
+    cin >> value;
+    while ( value != 1 && value != 2) {
+        std::cout << "Try again" << std::endl;
+        cin >> value;
+    }
+    if (value == 1) num = Computer;
+    else num = Player;
+    Interface(Rocks_num);
     game_process(num, Rocks_num);
 }
