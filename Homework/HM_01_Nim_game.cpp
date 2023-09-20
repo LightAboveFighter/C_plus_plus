@@ -9,7 +9,8 @@ enum game_turn {
 vector<int> Errors(vector<int> Rocks_num) {
     vector<int> Input (2); //пара чисел на ввод
     cin >> Input[0] >> Input[1];
-    while ( Input[0] <= 0 || Rocks_num[Input[0]-1] < Input[1]) {
+    while ( Input[0] <= 0 || Input[0] > int( Rocks_num.size() ) || 
+                              Rocks_num[Input[0]-1] < Input[1]) {
         std::cout << "Incorrect value, please try again" << std::endl;
         cin >> Input[0] >> Input[1];
     }
