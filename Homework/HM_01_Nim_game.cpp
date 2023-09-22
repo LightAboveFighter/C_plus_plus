@@ -10,7 +10,7 @@ vector<int> Errors(vector<int> Rocks_num) {
     vector<int> Input (2); //пара чисел на ввод
     cin >> Input[0] >> Input[1];
     while ( Input[0] <= 0 || Input[0] > int( Rocks_num.size() ) || 
-                              Rocks_num[Input[0]-1] < Input[1]) {
+                              Rocks_num[Input[0]-1] < Input[1] ) {
         std::cout << "Incorrect value, please try again" << std::endl;
         cin >> Input[0] >> Input[1];
     }
@@ -24,7 +24,7 @@ void Interface(vector<int> n_rocks) {  //интерфейс игры
     std::cout << "============================================================" << std::endl;
     std::cout << "String's number                                Rock's number" << std::endl;
     for (int i = 0; i < n_lines; ++i) {
-        std::cout << " " <<i+1<<"|  [";
+        std::cout << " " <<i+1<<"|" << char(9) <<"[";
         for (int k = 0; k < n_rocks[i]; ++k ) {
             std::cout << " " << "* ";
         }
@@ -56,7 +56,7 @@ vector<int> Computer_bot(vector<int> n_rocks) {  //Просчитываем на
             n_try_rocks[i] -= k;
             nim_sum = Nim(n_try_rocks);
             if ( nim_sum == 0 ) {
-                return {i, k};     //ищем выигрушную комбинацию
+                return {i, k};     //ищем выигрышную комбинацию
             };                     //если нашли - применяем
         }
     };

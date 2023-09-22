@@ -14,7 +14,10 @@ int check_input() {
 }
 
 int main() {
+    try {
     int p;
     p = check_input();
     std::cout << p << std::endl;
+    }
+
 }
