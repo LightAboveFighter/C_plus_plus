@@ -1,18 +1,38 @@
 #include <std_lib_facilities.h>
 
+int Safety_input() {
+
+    int num;
+    bool err = 1;
+    while (err) {
+        cin >> num;
+        if (cin.fail() ) {
+            std::cout << "Wrong type, try again, continue typing" << std::endl;
+            cin.clear();
+            cin.ignore(10000, '\n');
+        }
+        else {
+            err = 0;
+        }
+    }
+    return num;
+}
+
 enum game_turn {  
     Computer,
     Player,
     End_game
 };
 
-vector<int> Errors(vector<int> Rocks_num) {
+vector<int> Rock_in_range(vector<int> Rocks_num) {
     vector<int> Input (2); //пара чисел на ввод
-    cin >> Input[0] >> Input[1];
+    Input[0] = Safety_input();
+    Input[1] = Safety_input();
     while ( Input[0] <= 0 || Input[0] > int( Rocks_num.size() ) || 
                               Rocks_num[Input[0]-1] < Input[1] ) {
-        std::cout << "Incorrect value, please try again" << std::endl;
-        cin >> Input[0] >> Input[1];
+        std::cout << "Incorrect value, please try again, continue typing" << std::endl;
+        Input[0] = Safety_input();
+        Input[1] = Safety_input();
     }
     return Input;
 }
@@ -87,8 +107,8 @@ void game_process(game_turn num, vector<int> Rocks_num) {
 
     while ( num != End_game) {
         if ( num == Player) {
-            std::cout <<     "-------Enter string and rocks(<16) number with space--------" << std::endl;
-            Steps = Errors(Rocks_num);
+            std::cout <<     "-------Enter string and rocks(<16) number with enter--------" << std::endl;
+            Steps = Rock_in_range(Rocks_num);
             --Steps[0];
             Rocks_num = Step(Steps, Rocks_num);
             std::cout << "\e[1;1H\e[2J";
@@ -127,26 +147,28 @@ int main() {
     int n_lines;
     //vector<int> Input;
     int value; // вспомогательная переменная
-    std::cout <<     "-------Enter string and rocks(<16) number with space--------" << std::endl;
-    cin >> n_lines;
+    std::cout <<     "-------Enter string and rocks(<16) number with enter--------" << std::endl;
+    n_lines = Safety_input();
     while ( n_lines <= 0 ) {
         std::cout << "Incorrect value, please try again, continue typing" << std::endl;
-        cin >> n_lines;
+        n_lines = Safety_input();
     }
     game_turn num;
     
     for (int i = 0; (i < n_lines); ++i) {
-        while ( cin >> value && ( value <= 0 || value > 15)) {
+        value = Safety_input();
+        while ( ( value <= 0 || value > 15) ) {
             std::cout << "Incorrect value, please try again, continue typing" << std::endl;
+            value = Safety_input();
         };
         Rocks_num.push_back(value);
     }
     std::cout << "Who will start, Computer(1) or Player(2) ?" << std::endl;
 
-    cin >> value;
+    value = Safety_input();
     while ( value != 1 && value != 2) {
-        std::cout << "Try again" << std::endl;
-        cin >> value;
+        std::cout << "Try again, continue typing" << std::endl;
+        value = Safety_input();
     }
     if (value == 1) num = Computer;
     else num = Player;
