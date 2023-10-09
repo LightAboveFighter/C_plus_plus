@@ -17,6 +17,8 @@ struct Token
   Token(char ch) : kind{ch}, value{0} {}
 
   Token(char ch, double val) : kind{ch}, value{val} {}
+
+  Token(char ch, string s) : kind{ch}, name{s} {}
 };
 
 class Token_stream
@@ -25,7 +27,7 @@ class Token_stream
   Token buffer{'\0'};
 
 public:
-  Token_stream() {}
+  Token_stream() {};
 
   Token get ();
   void putback (Token t);
@@ -54,8 +56,7 @@ const string declkey = "let";
 
 Token Token_stream::get()
 {
-  if (full)
-  {
+  if (full) {
     full = false;
     return buffer;
   }
@@ -63,53 +64,47 @@ Token Token_stream::get()
   char ch;
   cin >> ch;
 
-  switch (ch)
-  {
-  case '(':
-  case ')':
-  case '+':
-  case '-':
-  case '*':
-  case '/':
-  case '%':
-  case ';':
-  case '=':
-    return Token{ch};
-
-  case '.':
-  case '0':
-  case '1':
-  case '2':
-  case '3':
-  case '4':
-  case '5':
-  case '6':
-  case '7':
-  case '8':
-  case '9':
-  {
-    cin.putback(ch);
-    double val;
-    cin >> val;
-    return Token{number, val};
-  }
-
-  default:
-    if (isalpha(ch))
-    {
-      string s;
-      s += ch;
-      while (cin.get(ch) && (isalpha(ch) || isdigit(ch)))
-        s = ch;
+  switch (ch) {
+    case '(':
+    case ')':
+    case '+':
+    case '-':
+    case '*':
+    case '/':
+    case '%':
+    case ';':
+    case '=':
+      return Token{ch};
+    case '.':
+    case '0':
+    case '1':
+    case '2':
+    case '3':
+    case '4':
+    case '5':
+    case '6':
+    case '7':
+    case '8':
+    case '9':
       cin.putback(ch);
+      double val;
+      cin >> val;
+      return Token{number, val};
+    default:
+      if (isalpha(ch)){
+        string s;
+        s += ch;
+        while (cin.get(ch) && (isalpha(ch) || isdigit(ch)))
+          s += ch;
+        cin.putback(ch);
 
-      if (s == declkey)
-        return Token{let};
+        if (s == declkey)
+          return Token{let};
 
-      return Token{name, s};
+        return Token{name, s};
+      }
+      error("Bad token");
     }
-    error("Bad token");
-  }
 }
 
 void Token_stream::ignore(char c)
