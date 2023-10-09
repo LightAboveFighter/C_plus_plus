@@ -73,7 +73,7 @@ vector<int> Computer_bot(vector<int> n_rocks) {  //Просчитываем на
     for (int i = 0; i < n_lines; ++i ) {
         for (int k = n_rocks[i]; k > 0; --k ) {
             n_try_rocks = n_rocks;
-            n_try_rocks[i] -= k;
+            n_try_rocks[i] -= k;    
             nim_sum = Nim(n_try_rocks);
             if ( nim_sum == 0 ) {
                 return {i, k};     //ищем выигрышную комбинацию
@@ -170,8 +170,12 @@ int main() {
         std::cout << "Try again, continue typing" << std::endl;
         value = Safety_input();
     }
-    if (value == 1) num = Computer;
-    else num = Player;
+    if (value == 1) {
+        num = Computer;
+    }
+    else {
+        num = Player;
+    }
     Interface(Rocks_num);
     game_process(num, Rocks_num);
 }

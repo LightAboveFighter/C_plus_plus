@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\07.10.23_Vec2d.dir/objects.a
+C:\PROGRA~1\mingw64\bin\ar.exe qc CMakeFiles\07.10.23_Vec2d.dir/objects.a @CMakeFiles\07.10.23_Vec2d.dir\objects1.rsp
+C:\PROGRA~1\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\07.10.23_Vec2d.dir/objects.a -Wl,--no-whole-archive -o 07.10.23_Vec2d.exe -Wl,--out-implib,lib07.10.23_Vec2d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\07.10.23_Vec2d.dir\linkLibs.rsp

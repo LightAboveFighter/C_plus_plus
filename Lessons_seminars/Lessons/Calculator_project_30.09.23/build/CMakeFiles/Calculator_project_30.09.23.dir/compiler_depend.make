@@ -249,7 +249,6 @@ CMakeFiles/Calculator_project_30.09.23.dir/Lesson_30.09.23_calculator.cpp.obj: D
   C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  D:/MIPT/C_plus_plus/Lessons_seminars/Lessons/Calculator_project_30.09.23/Token.cpp \
   D:/MIPT/C_plus_plus/Lessons_seminars/Lessons/Calculator_project_30.09.23/Token.h \
   D:/MIPT/C_plus_plus/Lessons_seminars/Lessons/Calculator_project_30.09.23/std_lib_facilities.h
 
