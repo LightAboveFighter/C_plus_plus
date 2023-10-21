@@ -24,6 +24,10 @@ double Vector2d::lenght() const {
     return std::sqrt(x*x + y*y);
 }
 
+double Vector2d::dot(const Vector2d& that) const {
+    return x * that.x + y * that.y;
+}
+
 Vector2d operator+(const Vector2d& lhs, const Vector2d& rhs) {
     Vector2d res{lhs};
     return res += rhs;
