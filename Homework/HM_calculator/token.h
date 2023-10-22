@@ -9,12 +9,15 @@ constexpr char name = 'a';
 constexpr char let = '#';
 constexpr char const_ch = '$';
 constexpr char user_var = '@';
+// constexpr char user_formula = '$$';
+// constexpr char const_formula = '@@';
 
 const string prompt = "> ";
 const string result = "= ";
 const string declkey = "let";
 const string cdeclkey = "const";
 const string user_var_key = "vars";
+// const string user_formula_key = "expr";
 
 
 struct Token

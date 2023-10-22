@@ -1,4 +1,5 @@
 #include "token.h"
+#include "input_stream.h"
 Token_stream ts;
 // string string_stream;
 
@@ -34,11 +35,8 @@ Token Token_stream::get()
   }
 
   char ch;
-  // ch = symbol_stream();
-  cin >> ch;
-  // if (isspace(ch) ) {
-  //   std::cout << "aaaaaa space space" << std::endl;
-  // }
+  ch = symbol_stream.get();
+  // cin >> ch;
 
   switch (ch) {
     case '(':
@@ -56,6 +54,9 @@ Token Token_stream::get()
     case 'q':
     case '^':
       return Token{ch};
+    case ' ':
+      symbol_stream.del_spaces();
+      return ts.get();
     case '.':
     case '0':
     case '1':
@@ -67,17 +68,32 @@ Token Token_stream::get()
     case '7':
     case '8':
     case '9':
-      cin.putback(ch);
+    {
+      // cin.putback(ch);
+      // cin >> val;
+
       double val;
-      cin >> val;
+      string st;
+
+      while (isdigit(ch)  || ch == '.') {
+        st += ch;
+        ch = symbol_stream.get();
+      }
+
+      symbol_stream.putback(ch);
+      val = stof(st);
       return Token{number, val};
-    default:;
+    }
+    default:
       if (isalpha(ch)){
         string s;
         s += ch;
-        while (cin.get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_'))
+        // while (cin.get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_'))
+        while (symbol_stream.get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_'))
+
           s += ch;
-        cin.putback(ch);
+        // cin.putback(ch);
+        symbol_stream.putback(ch);
 
         if (s == declkey)
             return Token{let};
@@ -104,11 +120,11 @@ void Token_stream::ignore(char c)
   full = false;
 
   char ch;
-  while (cin >> ch) 
-    if (ch == c)
-      return;
-  // while (string_stream.size() != 0)
-  //   ch = symbol_stream();
+  // while (cin >> ch) 
   //   if (ch == c)
   //     return;
+  while (symbol_stream.get(ch) ) {
+    if (ch == c) 
+      return;
+  }
 }
