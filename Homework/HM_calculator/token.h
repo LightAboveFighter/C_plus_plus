@@ -3,21 +3,21 @@
 #include "D:/MIPT/C_plus_plus/Homework/lib/std_lib_facilities.h"
 
 constexpr char quit = 'q';
-constexpr char print = ';';
+constexpr char print = '\n';
 constexpr char number = '8';
 constexpr char name = 'a';
 constexpr char let = '#';
 constexpr char const_ch = '$';
 constexpr char user_var = '@';
-// constexpr char user_formula = '$$';
-// constexpr char const_formula = '@@';
+constexpr char help = 'h';
+constexpr char user_formula = '~';
 
 const string prompt = "> ";
 const string result = "= ";
 const string declkey = "let";
 const string cdeclkey = "const";
 const string user_var_key = "vars";
-// const string user_formula_key = "expr";
+const string user_formula_key = "expr";
 
 
 struct Token
@@ -48,5 +48,11 @@ public:
 };
 
 extern Token_stream ts;
+
+
+double statement();
+void clean_up_mess();
+void calculate();
+double print_help();
 
 #endif

@@ -1,35 +1,49 @@
 #include "variables.h"
 #include "token.h"
 #include "ierarchy.h"
+#include "input_stream.h"
 Symbol_table sym_tab;
 
 
 double Symbol_table::get(string s) {
   for (size_t i = 0; i < var_table.size(); ++i)
-    if (var_table[i].name == s)
-      return var_table[i].value;
+    if (var_table[i].name == s) {
 
-  error("get: undefined name ", s);
+      if (var_table[i].type == type_var::expr) {
+        // symbol_stream.putback(' ');
+        clean_up_mess();
+        symbol_stream.inject( var_table[i].line );
+        return statement();
+      }
+
+      return var_table[i].value;
+    }
+
+  error("get: undefined name ", s, ", please, create it");
 }
 
-bool Symbol_table::is_constant(string s) {
+type_var Symbol_table::get_type(string s) {
     for (size_t i = 0; i < var_table.size(); ++i)
         if (var_table[i].name == s) {
-          return var_table[i].isconst;
+          return var_table[i].type;
         }
     error(s," is not declared");
 }
 
-void Symbol_table::set(string s, double d)
+void Symbol_table::set(string s)
 {
-  if (is_constant(s)) {
+  if (get_type(s) == type_var::constant) {
     error("set: changing constant ", s);
   }
   for (size_t i = 0; i <= var_table.size(); ++i)
   {
     if (var_table[i].name == s)
     {
-      var_table[i].value = d;
+      if (get_type(s) == type_var::non_constant) {
+        var_table[i].value = expression();
+        return;
+      }
+      var_table[i].line = symbol_stream.copy();
       return;
     }
   }
@@ -46,17 +60,26 @@ bool Symbol_table::is_declared (string s)
   return false;
 }
 
-double Symbol_table::define(string var, double val, bool isconst)
+double Symbol_table::define(string var, double val, type_var type)
 {
   if (is_declared(var))
     error(var, " declared twice");
 
-  var_table.push_back(Variable{var, val, isconst});
+  var_table.push_back(Variable{var, val, type});
 
   return val;
 }
 
-double Symbol_table::declaration(bool isc)
+string Symbol_table::define(string var, string line, type_var type) {
+  if (is_declared(var))
+    error(var, " declared twice");
+
+  var_table.push_back(Variable{var, line, type});
+
+  return line;
+}
+
+double Symbol_table::declaration(type_var type)
 {
   Token t = ts.get();
   if (t.kind != name)
@@ -67,16 +90,58 @@ double Symbol_table::declaration(bool isc)
     error(var, " declared twice");
 
   t = ts.get();
+
   if (t.kind != '=')
     error("'=' missing in declaration of ", var);
 
-  return define(var, expression(), isc);
+  if (type == type_var::expr) {
+    define(var, symbol_stream.copy(), type);
+    return statement();
+  }
+
+  return define(var, expression(), type);
 }
 
+// double Symbol_table::user_variables() {
+//   cout << "===== Variables ===== =\n";
+//   for ( Variable var: var_table) {
+//     switch (var.type) {
+//       case type_var::non_constant:
+//         std::cout << "var " << var.name << "  =  " << var.value << std::endl;
+//         break;
+//       case type_var::constant:
+//         std::cout << "const " << var.name << "  =  " << var.value << std::endl;
+//         break;
+//       case type_var::expr:
+//         std::cout << "expr " << var.name << "  =  " << var.line << std::endl;
+//         break;
+//       default:
+//         break;
+//     }
+//   }
+//   cout << "In total variables: ";
+//   return var_table.size();
+// }
+
 double Symbol_table::user_variables() {
+  cout << "===== Variables ===== =\n";
   for ( Variable var: var_table) {
-    std::cout << (var.isconst ? "const " : "var ")
-              << var.name << "  =  " << var.value << std::endl;
+    if (var.type == type_var::constant) {
+      std::cout << "const " << var.name << "  =  " << var.value << std::endl;
+    }
   }
-  return 0.;
+  std::cout << "\n";
+  for ( Variable var: var_table) {
+    if (var.type == type_var::expr) {
+      std::cout << "expr " << var.name << "  =  " << var.line;
+    }
+  }
+  std::cout << "\n";
+  for ( Variable var: var_table) {
+    if (var.type == type_var::non_constant) {
+      std::cout << "var " << var.name << "  =  " << var.value << std::endl;;
+    }
+  }
+  cout << "\nIn total variables: ";
+  return var_table.size();
 }

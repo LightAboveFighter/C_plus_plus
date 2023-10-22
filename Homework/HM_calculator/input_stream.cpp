@@ -15,6 +15,7 @@ char string_stream::get() {
         return temp;
     }
     getline(cin,stream);
+    stream += "\n";
     // if (stream.find(" ") != string::npos) 
     //     stream.erase(' ');
     temp = stream[0];
@@ -53,4 +54,12 @@ void string_stream::del_spaces() {
         if (stream[i] != ' ')
             nw += char(stream[i]);
     stream = nw;
+}
+
+string string_stream::copy() {
+    return stream;
+}
+
+void string_stream::inject(string s) {
+    stream = s + " " + stream;
 }

@@ -14,6 +14,8 @@ public:
     bool get(char& ch);
     void ignore(char ch);
     void del_spaces();
+    string copy();
+    void inject(string s);
 };
 
 extern string_stream symbol_stream;

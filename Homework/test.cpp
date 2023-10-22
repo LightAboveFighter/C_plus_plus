@@ -1,12 +1,8 @@
-#include <std_lib_facilities.h>
+#include "D:/MIPT/C_plus_plus/Homework/lib/std_lib_facilities.h"
 
 int main() {
-    double t = 3.6;
-    double* tt = &t;
-    cout << &t << ", " << &tt << "\n";
-    t += 4.2;
-    cout << t << ", " << *tt << "\n";
-    *tt += 1.6;
-    cout << t << ", " << tt << "\n";
-
+    string t = "12 --34-- 5678--9";
+    cout << t.erase(1) << "  " << t << t.replace(0, 1, "");
+    cout << "end";
+    keep_window_open();
 }

@@ -35,7 +35,7 @@ double primary ()
 
       Token t2 = ts.get();
       if (t2.kind == '=') {
-        sym_tab.set(t.name, expression());
+        sym_tab.set(t.name);
       }
       else {
         ts.putback(t2);
