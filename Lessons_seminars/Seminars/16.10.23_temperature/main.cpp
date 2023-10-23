@@ -80,11 +80,45 @@ int main() {
 
     write_to_file(temps, "in.txt");
 
-    auto lambda = [] (const auto& a, const auto& b) -> bool 
-                    { return a.temperature < b.temperature; };
-    // f(lambda);
+    double max = 0.;
+    bool was_set = true;
+
+    auto lambda = [&max, &was_set] (const Record& a, const Record& b) -> bool {
+    if (!was_set || a.temperature > max) {
+        was_set = true;
+        max = a.temperature;
+    }
+    else if (was_set || b.temperature > max) {
+        was_set = true;
+        max = b.temperature;
+    }
+
+    return a.temperature < b.temperature;
+    };
+
+    // class lambda {
+    //     bool was_set = false;
+    // public:
+    //     double max = 0.;
+
+    //     bool operator() (const Record& a, const Record& b) {
+    //         if (!was_set || a.temperature > max) {
+    //             was_set = true;
+    //             max = a.temperature;
+    //         }
+    //         else if (was_set || b.temperature > max) {
+    //             was_set = true;
+    //             max = b.temperature;
+    //         }
+
+    //         return a.temperature < b.temperature;
+    //     }
+    // } lambda;
+
+
     std::sort(temps.begin(), temps.end(), lambda );
     write_to_file(temps, "out.txt");
+    std::cout << "MAX = " << max << std::endl;
 
     return 0;
 }
