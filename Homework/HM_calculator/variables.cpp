@@ -10,7 +10,6 @@ double Symbol_table::get(string s) {
     if (var_table[i].name == s) {
 
       if (var_table[i].type == type_var::expr) {
-        // symbol_stream.putback(' ');
         clean_up_mess();
         symbol_stream.inject( var_table[i].line );
         return statement();
@@ -19,7 +18,7 @@ double Symbol_table::get(string s) {
       return var_table[i].value;
     }
 
-  error("get: undefined name ", s, ", please, create it");
+  error("get: undefined name, please create it: ", s);
 }
 
 type_var Symbol_table::get_type(string s) {
@@ -101,27 +100,6 @@ double Symbol_table::declaration(type_var type)
 
   return define(var, expression(), type);
 }
-
-// double Symbol_table::user_variables() {
-//   cout << "===== Variables ===== =\n";
-//   for ( Variable var: var_table) {
-//     switch (var.type) {
-//       case type_var::non_constant:
-//         std::cout << "var " << var.name << "  =  " << var.value << std::endl;
-//         break;
-//       case type_var::constant:
-//         std::cout << "const " << var.name << "  =  " << var.value << std::endl;
-//         break;
-//       case type_var::expr:
-//         std::cout << "expr " << var.name << "  =  " << var.line << std::endl;
-//         break;
-//       default:
-//         break;
-//     }
-//   }
-//   cout << "In total variables: ";
-//   return var_table.size();
-// }
 
 double Symbol_table::user_variables() {
   cout << "===== Variables ===== =\n";

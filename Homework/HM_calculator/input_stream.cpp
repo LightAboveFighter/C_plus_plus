@@ -16,8 +16,6 @@ char string_stream::get() {
     }
     getline(cin,stream);
     stream += "\n";
-    // if (stream.find(" ") != string::npos) 
-    //     stream.erase(' ');
     temp = stream[0];
     stream.erase(0, 1);
     return temp;
