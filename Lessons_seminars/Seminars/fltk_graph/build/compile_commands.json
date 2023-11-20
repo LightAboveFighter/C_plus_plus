@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.cpp",
+  "file": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.cpp"
+},
+{
+  "directory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.cpp",
+  "file": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.cpp"
+},
+{
+  "directory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.cpp",
+  "file": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.cpp"
+},
+{
+  "directory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp",
+  "file": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp"
+},
+{
+  "directory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fltk_graph.dir/main.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/main.cpp",
+  "file": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/main.cpp"
+}
+]

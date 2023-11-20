@@ -56,9 +56,9 @@ int main() {
             TestDouble{#exp, exp, res}
     
     std::vector<TestDouble> d_tests = {
-        EXPR(t.lenght(), std::sqrt(2)),
-        EXPR(s.lenght(), 1),
-        EXPR(p.lenght(), 1),
+        EXPR(t.length(), std::sqrt(2)),
+        EXPR(s.length(), 1),
+        EXPR(p.length(), 1),
         EXPR(t.dot(s), 1),
         EXPR(t.dot(p), 1),
         EXPR(s.dot(p), 0)

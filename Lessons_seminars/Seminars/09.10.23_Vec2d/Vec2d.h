@@ -15,7 +15,7 @@ public:
     Vector2d& operator-=(const Vector2d& that);
     Vector2d& operator*=(double value);
 
-    double lenght() const;
+    double length() const;
     double dot(const Vector2d& that) const;
 
 };

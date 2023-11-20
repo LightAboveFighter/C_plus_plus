@@ -20,7 +20,7 @@ Vector2d& Vector2d::operator*=(double value) {
     return *this;
 }
 
-double Vector2d::lenght() const {
+double Vector2d::length() const {
     return std::sqrt(x*x + y*y);
 }
 
