@@ -14,7 +14,6 @@ public:
     Vector2d& operator+=(const Vector2d& that);
     Vector2d& operator-=(const Vector2d& that);
     Vector2d& operator*=(double value);
-
     double length() const;
     double dot(const Vector2d& that) const;
 
@@ -22,6 +21,7 @@ public:
 
 Vector2d operator+(const Vector2d& lhs, const Vector2d& rhs);
 Vector2d operator-(const Vector2d& lhs, const Vector2d& rhs);
+Vector2d operator*(const Vector2d& that, double value);
 
 std::ostream& operator<<(std::ostream& os, const Vector2d& vec);
 

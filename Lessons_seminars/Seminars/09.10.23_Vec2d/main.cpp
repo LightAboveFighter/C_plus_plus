@@ -27,13 +27,15 @@ void test_vector_result(const TestVec& test, double eps) {
 void test_vector_double(const TestDouble& test, double eps) {
     bool ok = std::abs(test.answer - test.result) < eps;
     std::cout << test.expression << " result = " <<  test.result << " correct = "
-              << test.answer << "[ " << (ok ? "OK" : "FAILED") << "]" << std::endl;
+              << test.answer << "[" << (ok ? "OK" : "FAILED") << "]" << std::endl;
 
 }
 
 int main() {
 
     constexpr double eps = std::numeric_limits<double>::epsilon();
+    std::cout <<"rer";
+    
 
     #define EXPR(exp, res)\
             TestVec{#exp, exp, res}

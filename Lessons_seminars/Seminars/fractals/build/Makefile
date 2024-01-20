@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals
+CMAKE_SOURCE_DIR = /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build
+CMAKE_BINARY_DIR = /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,9 +117,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build/CMakeFiles /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build/CMakeFiles /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -523,77 +523,77 @@ fractals/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/build
 .PHONY : fractals/fast
 
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.o: home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.o
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.o: home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.o
 
 # target to build an object file
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o
 
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.i: home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.i
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.i
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.i: home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.i
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.i
 
 # target to preprocess a source file
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.i
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.i
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.i
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.i
 
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.s: home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.s
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.s
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.s: home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.s
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.s
 
 # target to generate assembly for a file
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.s
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.s
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.s
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.s
 
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.o: home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.o
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.o: home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.o
 
 # target to build an object file
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o
 
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.i: home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.i
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.i
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.i: home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.i
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.i
 
 # target to preprocess a source file
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.i
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.i
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.i
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.i
 
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.s: home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.s
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.s
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.s: home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.s
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.s
 
 # target to generate assembly for a file
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.s
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.s
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.s
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.s
 
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.o: home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.o
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.o: home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.o
 
 # target to build an object file
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o
 
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.i: home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.i
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.i
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.i: home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.i
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.i
 
 # target to preprocess a source file
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.i
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.i
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.i
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.i
 
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.s: home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.s
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.s
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.s: home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.s
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.s
 
 # target to generate assembly for a file
-home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.s
-.PHONY : home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.s
+home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fractals.dir/build.make CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.s
+.PHONY : home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -683,15 +683,15 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... fractals"
-	@echo "... home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.o"
-	@echo "... home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.i"
-	@echo "... home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.s"
-	@echo "... home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.o"
-	@echo "... home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.i"
-	@echo "... home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.s"
-	@echo "... home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.o"
-	@echo "... home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.i"
-	@echo "... home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.s"
+	@echo "... home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.o"
+	@echo "... home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.i"
+	@echo "... home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.s"
+	@echo "... home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.o"
+	@echo "... home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.i"
+	@echo "... home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.s"
+	@echo "... home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.o"
+	@echo "... home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.i"
+	@echo "... home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

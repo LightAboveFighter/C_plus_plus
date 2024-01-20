@@ -1,6 +1,8 @@
 CMakeFiles/fltk_graph.dir/main.cpp.o: \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/main.cpp \
+ /usr/include/stdc-predef.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/fractals.h \
+ /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -147,7 +149,7 @@ CMakeFiles/fltk_graph.dir/main.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -171,7 +173,7 @@ CMakeFiles/fltk_graph.dir/main.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.h \
  /usr/include/c++/11/functional /usr/include/c++/11/tuple \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
@@ -193,8 +195,8 @@ CMakeFiles/fltk_graph.dir/main.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Point.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/fltk.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Point.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/fltk.h \
  /usr/include/FL/Enumerations.H /usr/include/FL/abi-version.h \
  /usr/include/FL/Fl_Export.H /usr/include/FL/fl_types.h \
  /usr/include/FL/Fl.H /usr/include/FL/Fl_Export.H \
@@ -230,11 +232,17 @@ CMakeFiles/fltk_graph.dir/main.cpp.o: \
  /usr/include/FL/Fl_Pixmap.H /usr/include/FL/Fl_RGB_Image.H \
  /usr/include/FL/Fl_GIF_Image.H /usr/include/FL/Fl_Pixmap.H \
  /usr/include/FL/Fl_JPEG_Image.H /usr/include/FL/Fl_PNG_Image.H \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Simple_window.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Simple_window.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/cassert \
- /usr/include/assert.h
+ /usr/include/assert.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/MNK_chapter_8.h \
+ /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h

@@ -1,0 +1,4 @@
+/home/alexunder/Documents/MIPT/C_plus_plus/Books/build-QT_practice-Desktop-Debug/CMakeFiles/QT_practice.dir
+/home/alexunder/Documents/MIPT/C_plus_plus/Books/build-QT_practice-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/alexunder/Documents/MIPT/C_plus_plus/Books/build-QT_practice-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/alexunder/Documents/MIPT/C_plus_plus/Books/build-QT_practice-Desktop-Debug/CMakeFiles/QT_practice_autogen.dir

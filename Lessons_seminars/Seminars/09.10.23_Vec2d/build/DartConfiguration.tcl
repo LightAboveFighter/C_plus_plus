@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d
-BuildDirectory: /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build
+SourceDirectory: /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d
+BuildDirectory: /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: UbuntuAlexUnder
+Site: alexunder-HP-Pavilion-15-Notebook-PC
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-g++
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d"
+ConfigureCommand: "/usr/bin/cmake" "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

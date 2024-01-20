@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d
+CMAKE_SOURCE_DIR = /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build
+CMAKE_BINARY_DIR = /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,9 +117,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build/CMakeFiles /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build/CMakeFiles /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -511,24 +511,24 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named 09.10.23_Vec2d
+# Target rules for targets named Vec2d
 
 # Build rule for target.
-09.10.23_Vec2d: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 09.10.23_Vec2d
-.PHONY : 09.10.23_Vec2d
+Vec2d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Vec2d
+.PHONY : Vec2d
 
 # fast build rule for target.
-09.10.23_Vec2d/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/09.10.23_Vec2d.dir/build.make CMakeFiles/09.10.23_Vec2d.dir/build
-.PHONY : 09.10.23_Vec2d/fast
+Vec2d/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vec2d.dir/build.make CMakeFiles/Vec2d.dir/build
+.PHONY : Vec2d/fast
 
 Vec2d.o: Vec2d.cpp.o
 .PHONY : Vec2d.o
 
 # target to build an object file
 Vec2d.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/09.10.23_Vec2d.dir/build.make CMakeFiles/09.10.23_Vec2d.dir/Vec2d.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vec2d.dir/build.make CMakeFiles/Vec2d.dir/Vec2d.cpp.o
 .PHONY : Vec2d.cpp.o
 
 Vec2d.i: Vec2d.cpp.i
@@ -536,7 +536,7 @@ Vec2d.i: Vec2d.cpp.i
 
 # target to preprocess a source file
 Vec2d.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/09.10.23_Vec2d.dir/build.make CMakeFiles/09.10.23_Vec2d.dir/Vec2d.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vec2d.dir/build.make CMakeFiles/Vec2d.dir/Vec2d.cpp.i
 .PHONY : Vec2d.cpp.i
 
 Vec2d.s: Vec2d.cpp.s
@@ -544,7 +544,7 @@ Vec2d.s: Vec2d.cpp.s
 
 # target to generate assembly for a file
 Vec2d.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/09.10.23_Vec2d.dir/build.make CMakeFiles/09.10.23_Vec2d.dir/Vec2d.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vec2d.dir/build.make CMakeFiles/Vec2d.dir/Vec2d.cpp.s
 .PHONY : Vec2d.cpp.s
 
 main.o: main.cpp.o
@@ -552,7 +552,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/09.10.23_Vec2d.dir/build.make CMakeFiles/09.10.23_Vec2d.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vec2d.dir/build.make CMakeFiles/Vec2d.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -560,7 +560,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/09.10.23_Vec2d.dir/build.make CMakeFiles/09.10.23_Vec2d.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vec2d.dir/build.make CMakeFiles/Vec2d.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -568,7 +568,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/09.10.23_Vec2d.dir/build.make CMakeFiles/09.10.23_Vec2d.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vec2d.dir/build.make CMakeFiles/Vec2d.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -610,7 +610,7 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... 09.10.23_Vec2d"
+	@echo "... Vec2d"
 	@echo "... Vec2d.o"
 	@echo "... Vec2d.i"
 	@echo "... Vec2d.s"

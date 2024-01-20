@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals
+CMAKE_SOURCE_DIR = /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build
+CMAKE_BINARY_DIR = /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build
 
 # Utility rule file for NightlyCoverage.
 
@@ -82,6 +82,6 @@ CMakeFiles/NightlyCoverage.dir/clean:
 .PHONY : CMakeFiles/NightlyCoverage.dir/clean
 
 CMakeFiles/NightlyCoverage.dir/depend:
-	cd /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build/CMakeFiles/NightlyCoverage.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build/CMakeFiles/NightlyCoverage.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlyCoverage.dir/depend
 

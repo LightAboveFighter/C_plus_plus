@@ -38,6 +38,11 @@ Vector2d operator-(const Vector2d& lhs, const Vector2d& rhs) {
     return res -= rhs;
 }
 
+Vector2d operator*(const Vector2d& that, double value) {
+    Vector2d res{that};
+    return res *= value;
+}
+
 std::ostream& operator<<(std::ostream& os, const Vector2d& vec) {
     os << "(" << vec.x << "; " << vec.y << ")";
     return os;

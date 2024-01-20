@@ -2,9 +2,9 @@
 #include "make_fractal.h"
 #include <vector>
 
-std::vector<Graph_lib::Point> simple_fractalize(vector<Graph_lib::Point> points) {
-    vector<Graph_lib::Point> result( int( points.size() ));
-    for (int i = 0, i < int( points.size() ) - 1; ++i) {
+std::vector<Graph_lib::Point> simple_fractalize(std::vector<Graph_lib::Point> point) {
+    std::vector<Graph_lib::Point> result( int( point.size() ));
+    for (int i = 0; i < int( point.size() ) - 1; ++i) {
         result[i] = point[i];
         Graph_lib::Point mean = Graph_lib::Point{(point[i].xa + point[i+1].xa) / 2, (point[i].ya + point[i+1].ya) / 2};
         Graph_lib::Point side = Graph_lib::Point{point[i+1].xa - point[i].xa, point[i+1].ya - point[i].ya};

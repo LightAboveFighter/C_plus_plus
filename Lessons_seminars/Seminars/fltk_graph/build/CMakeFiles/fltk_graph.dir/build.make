@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph
+CMAKE_SOURCE_DIR = /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build
+CMAKE_BINARY_DIR = /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fltk_graph.dir/depend.make
@@ -72,79 +72,79 @@ include CMakeFiles/fltk_graph.dir/flags.make
 CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o: CMakeFiles/fltk_graph.dir/flags.make
 CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o: ../Graph_lib/Graph.cpp
 CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o: CMakeFiles/fltk_graph.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o -MF CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o.d -o CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o -MF CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o.d -o CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.cpp
 
 CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.cpp > CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.cpp > CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.i
 
 CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.cpp -o CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.cpp -o CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.s
 
 CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o: CMakeFiles/fltk_graph.dir/flags.make
 CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o: ../Graph_lib/GUI.cpp
 CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o: CMakeFiles/fltk_graph.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o -MF CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o.d -o CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o -MF CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o.d -o CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.cpp
 
 CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.cpp > CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.cpp > CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.i
 
 CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.cpp -o CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.cpp -o CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.s
 
 CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o: CMakeFiles/fltk_graph.dir/flags.make
 CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o: ../Graph_lib/Window.cpp
 CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o: CMakeFiles/fltk_graph.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o -MF CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o.d -o CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o -MF CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o.d -o CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.cpp
 
 CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.cpp > CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.cpp > CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.i
 
 CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.cpp -o CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.cpp -o CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.s
 
-CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o: CMakeFiles/fltk_graph.dir/flags.make
-CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o: /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp
-CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o: CMakeFiles/fltk_graph.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o -MF CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o.d -o CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp
+CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o: CMakeFiles/fltk_graph.dir/flags.make
+CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o: /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp
+CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o: CMakeFiles/fltk_graph.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o -MF CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o.d -o CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp
 
-CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp > CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.i
+CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp > CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.i
 
-CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp -o CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.s
+CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp -o CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.s
 
 CMakeFiles/fltk_graph.dir/main.cpp.o: CMakeFiles/fltk_graph.dir/flags.make
 CMakeFiles/fltk_graph.dir/main.cpp.o: ../main.cpp
 CMakeFiles/fltk_graph.dir/main.cpp.o: CMakeFiles/fltk_graph.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fltk_graph.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fltk_graph.dir/main.cpp.o -MF CMakeFiles/fltk_graph.dir/main.cpp.o.d -o CMakeFiles/fltk_graph.dir/main.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fltk_graph.dir/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fltk_graph.dir/main.cpp.o -MF CMakeFiles/fltk_graph.dir/main.cpp.o.d -o CMakeFiles/fltk_graph.dir/main.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/main.cpp
 
 CMakeFiles/fltk_graph.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fltk_graph.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/main.cpp > CMakeFiles/fltk_graph.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/main.cpp > CMakeFiles/fltk_graph.dir/main.cpp.i
 
 CMakeFiles/fltk_graph.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fltk_graph.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/main.cpp -o CMakeFiles/fltk_graph.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/main.cpp -o CMakeFiles/fltk_graph.dir/main.cpp.s
 
 # Object files for target fltk_graph
 fltk_graph_OBJECTS = \
 "CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o" \
 "CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o" \
 "CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o" \
-"CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o" \
+"CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o" \
 "CMakeFiles/fltk_graph.dir/main.cpp.o"
 
 # External object files for target fltk_graph
@@ -153,11 +153,11 @@ fltk_graph_EXTERNAL_OBJECTS =
 fltk_graph: CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o
 fltk_graph: CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o
 fltk_graph: CMakeFiles/fltk_graph.dir/Graph_lib/Window.cpp.o
-fltk_graph: CMakeFiles/fltk_graph.dir/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o
+fltk_graph: CMakeFiles/fltk_graph.dir/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.cpp.o
 fltk_graph: CMakeFiles/fltk_graph.dir/main.cpp.o
 fltk_graph: CMakeFiles/fltk_graph.dir/build.make
 fltk_graph: CMakeFiles/fltk_graph.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable fltk_graph"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable fltk_graph"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fltk_graph.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +169,6 @@ CMakeFiles/fltk_graph.dir/clean:
 .PHONY : CMakeFiles/fltk_graph.dir/clean
 
 CMakeFiles/fltk_graph.dir/depend:
-	cd /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles/fltk_graph.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build/CMakeFiles/fltk_graph.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fltk_graph.dir/depend
 

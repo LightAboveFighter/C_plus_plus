@@ -1,73 +1,50 @@
-#include <iostream>
-#include <sstream>
-#include <stdexcept>
-#include "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/09.10.23_Vec2d/Vec2d.h"
+#include "fractals.h"
+#include "MNK_chapter_8.h"
 
-#include "Graph_lib/Graph.h"
-#include "Graph_lib/Simple_window.h"
-#include <list>
-#include <cassert>
-#include <cmath>
+int main (int argc, char* argv[]) {
+    // draw_koch_snowflake(800, 3);
+    // if (argc != 2) {
+    //     std::cerr << "usage: " << argv[0] << " file_with_data" << std::endl;
+    //     return 2;
+    // }
+    // try {
+    //     std::string datafile{argv[1]};
+    //     auto [a, b] = least_squares(read(datafile)); // C++17
+    //     std::cout << datafile << " " << a.value << " " << a.delta << " "
+    //     << b.value << " " << b.delta << std::endl;
+    // }
+    // catch (std::exception& e) {
+    //     std::cerr << "error: " << e.what() << std::endl;
+    //     return 1;
+    // }
 
-using namespace Graph_lib;
+    constexpr double xscale = 30.;
+    constexpr double yscale = 30.;
+    constexpr int npoints = 400;
+    constexpr int rmin = -10;
+    constexpr int rmax = 11;
+    constexpr Graph_lib::Point orig{600, 300};
+    
+    Graph_lib::Point ys{1, 1};
 
-Vector2d rotated(double angle, Vector2d point, Vector2d center) {
-    Vector2d r{point - center};
-    double cos_a = std::cos(angle);
-    double sin_a = std::sin(angle);
+    auto data = read("data.txt");
+    Graph_lib::Marks scatter{"O"};
+    for (auto p : data)
+        scatter.add(Graph_lib::Point{xs(p.x), ys(p.y)});
 
-    return center + Vector2d{cos_a * r.x - sin_a * r.y, sin_a * r.x + cos_a * r.y};
-}
+    using BaseFunction = double (*)(double);
 
-std::list<Vector2d> regular_polygon( int n, Vector2d center, double radius, double angle) {
-    assert (n > 2);
-
-    Vector2d p{radius, 0.};
-    std::list<Vector2d> poly;
-
-    for ( int j = 0; j < n; ++j) {
-        double phi = -2. * M_PI * j / n;
-        Vector2d q = rotated(angle + phi, p + center, center);
-        poly.push_back(q);
+    auto make_regression (Coeff a, Coeff b, BaseFunction f) {
+        return [a, b, f] (double x) { return a.value + b.value * f(x); };
     }
 
-    return poly;
-}
+    auto [a, b] = least_squares(data, linear); // C++17
+    Graph_lib::Function line1{make_regression(a, b, linear),
+        rmin, rmax, orig, npoints, xscale, yscale};
+    line1.set_style(Graph_lib::Line_style{Graph_lib::Line_style::solid, 2});
+    line1.set_color(Graph_lib::Color::red);
 
-inline auto as_point( Vector2d p) {
-    return Point{int(std::round(p.x)), int(std::round(p.y))};
-}
-
-void append(Closed_polyline& poly, const std::list<Vector2d>& points) {
-    for ( const auto& item : points) {
-        poly.add(as_point(item));
-    }
-}
-
-
-int main() {
-    Point t1{50, 50};
-    Simple_window win{t1, 1200, 600, "Canvas"};
-    win.wait_for_button();
-    Axis xa{Axis::x, Point{20, 580}, 1180, 59, "x axis"};
-    win.attach(xa);
-    win.set_label("Canvas #2");
-    win.wait_for_button();
-
-    Axis ya{Axis::y, Point{20, 580}, 580, 29, "y axis"};
-    win.attach(ya);
-    win.set_label("Canvas #3");
-    win.wait_for_button();
-    Closed_polyline t;
-    std::list<Vector2d> points{{100, 200}, {400, 200}, {250, 500}};
-    append(t, points);
-    win.attach(t);
-    win.wait_for_button();
-    std::list<Vector2d> pol = regular_polygon(5, {600, 300}, 100, 0);
-    Closed_polyline tt;
-    append(tt, pol);
-    win.attach(tt);
-    win.wait_for_button();
-
+    CoeffTuple least_squares (const std::vector<Point>& points, BaseFunction f);
+    double linear (double x) { return x; }
 
 }

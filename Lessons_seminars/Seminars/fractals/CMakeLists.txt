@@ -5,8 +5,8 @@ include(CTest)
 enable_testing()
 find_package(FLTK)
 # /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph
-set(LIB_DIR /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals)
-set(ADD_LIBS_DIR /home/admin/Documents/MIPT/C_plus_plus/add_libraries)
+set(LIB_DIR /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals)
+set(ADD_LIBS_DIR /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries)
 set(TARGET fractals)
 
 set( HEADERS

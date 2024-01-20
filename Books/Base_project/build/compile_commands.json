@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/base_project.dir/main.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/main.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/main.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/base_project.dir/Channel.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/Channel.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/Channel.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/base_project.dir/Terminal.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/Terminal.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/Terminal.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/base_project.dir/enums.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/enums.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/Base_project/enums.cpp"
+}
+]

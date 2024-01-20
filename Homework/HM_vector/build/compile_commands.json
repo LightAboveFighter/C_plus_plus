@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Homework/HM_vector/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hm_vector.dir/main.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Homework/HM_vector/main.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Homework/HM_vector/main.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Homework/HM_vector/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hm_vector.dir/vector.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Homework/HM_vector/vector.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Homework/HM_vector/vector.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Homework/HM_vector/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/hm_vector.dir/actual.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Homework/HM_vector/actual.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Homework/HM_vector/actual.cpp"
+}
+]

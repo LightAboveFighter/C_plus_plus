@@ -1,3 +1,14 @@
 {
-    "cmake.sourceDirectory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph"
+    "cmake.sourceDirectory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph",
+    "cmake.configureOnOpen": true,
+    "files.associations": {
+        "*.tcc": "cpp",
+        "iosfwd": "cpp",
+        "system_error": "cpp",
+        "array": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp"
+    }
 }

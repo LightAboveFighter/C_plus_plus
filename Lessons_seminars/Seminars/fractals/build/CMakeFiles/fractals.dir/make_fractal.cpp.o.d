@@ -1,5 +1,5 @@
 CMakeFiles/fractals.dir/make_fractal.cpp.o: \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/make_fractal.cpp \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/make_fractal.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -84,7 +84,7 @@ CMakeFiles/fractals.dir/make_fractal.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/make_fractal.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/make_fractal.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
  /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \
@@ -100,4 +100,115 @@ CMakeFiles/fractals.dir/make_fractal.cpp.o: \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
- /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/stl_function.h \
+ /usr/include/c++/11/backward/binders.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/std_function.h /usr/include/c++/11/typeinfo \
+ /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/cstdlib /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/string \
+ /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/c++/11/bits/char_traits.h \
+ /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
+ /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+ /usr/include/c++/11/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/11/bits/localefwd.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+ /usr/include/c++/11/clocale /usr/include/locale.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/iosfwd \
+ /usr/include/c++/11/cctype /usr/include/ctype.h \
+ /usr/include/c++/11/bits/ostream_insert.h \
+ /usr/include/c++/11/bits/cxxabi_forced.h \
+ /usr/include/c++/11/bits/basic_string.h \
+ /usr/include/c++/11/ext/atomicity.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+ /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+ /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+ /usr/include/c++/11/string_view /usr/include/c++/11/bits/string_view.tcc \
+ /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdio \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/11/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+ /usr/include/c++/11/bits/charconv.h \
+ /usr/include/c++/11/bits/basic_string.tcc \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Point.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/fltk.h \
+ /usr/include/FL/Enumerations.H /usr/include/FL/abi-version.h \
+ /usr/include/FL/Fl_Export.H /usr/include/FL/fl_types.h \
+ /usr/include/FL/Fl.H /usr/include/FL/Fl_Export.H \
+ /usr/include/FL/fl_utf8.h /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/stdlib.h /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+ /usr/include/FL/Enumerations.H /usr/include/FL/Fl_Button.H \
+ /usr/include/FL/Fl_Widget.H /usr/include/FL/Fl_Input.H \
+ /usr/include/FL/Fl_Input_.H /usr/include/FL/Fl_Output.H \
+ /usr/include/FL/Fl_Input.H /usr/include/FL/Fl_Window.H \
+ /usr/include/FL/Fl_Group.H /usr/include/FL/Fl_Bitmap.H \
+ /usr/include/FL/Fl_Image.H /usr/include/FL/fl_draw.H /usr/include/FL/x.H \
+ /usr/include/X11/Xlib.h /usr/include/X11/X.h \
+ /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
+ /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
+ /usr/include/X11/keysymdef.h /usr/include/X11/Xatom.h \
+ /usr/include/FL/Fl_Window.H /usr/include/FL/Fl_Device.H \
+ /usr/include/FL/Fl_Plugin.H /usr/include/FL/Fl_Preferences.H \
+ /usr/include/FL/Fl_Image.H /usr/include/FL/Fl_Bitmap.H \
+ /usr/include/FL/Fl_Pixmap.H /usr/include/FL/Fl_RGB_Image.H \
+ /usr/include/FL/Fl_GIF_Image.H /usr/include/FL/Fl_Pixmap.H \
+ /usr/include/FL/Fl_JPEG_Image.H /usr/include/FL/Fl_PNG_Image.H \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Simple_window.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.h

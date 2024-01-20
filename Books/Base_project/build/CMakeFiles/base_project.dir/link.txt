@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/base_project.dir/main.cpp.o CMakeFiles/base_project.dir/Channel.cpp.o CMakeFiles/base_project.dir/Terminal.cpp.o CMakeFiles/base_project.dir/enums.cpp.o -o base_project 

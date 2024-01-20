@@ -1,5 +1,5 @@
 CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o: \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.cpp \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/algorithm \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -202,9 +202,9 @@ CMakeFiles/fltk_graph.dir/Graph_lib/Graph.cpp.o: \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h /usr/include/c++/11/bit \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Point.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/fltk.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Point.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/fltk.h \
  /usr/include/FL/Enumerations.H /usr/include/FL/abi-version.h \
  /usr/include/FL/Fl_Export.H /usr/include/FL/fl_types.h \
  /usr/include/FL/Fl.H /usr/include/FL/Fl_Export.H \

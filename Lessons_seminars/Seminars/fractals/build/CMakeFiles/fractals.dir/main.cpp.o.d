@@ -1,7 +1,7 @@
 CMakeFiles/fractals.dir/main.cpp.o: \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/main.cpp \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/main.cpp \
  /usr/include/stdc-predef.h \
- /home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -170,8 +170,8 @@ CMakeFiles/fractals.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Point.h \
- /home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/fltk.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Point.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/fltk.h \
  /usr/include/FL/Enumerations.H /usr/include/FL/abi-version.h \
  /usr/include/FL/Fl_Export.H /usr/include/FL/fl_types.h \
  /usr/include/FL/Fl.H /usr/include/FL/Fl_Export.H \
@@ -207,8 +207,8 @@ CMakeFiles/fractals.dir/main.cpp.o: \
  /usr/include/FL/Fl_Pixmap.H /usr/include/FL/Fl_RGB_Image.H \
  /usr/include/FL/Fl_GIF_Image.H /usr/include/FL/Fl_Pixmap.H \
  /usr/include/FL/Fl_JPEG_Image.H /usr/include/FL/Fl_PNG_Image.H \
- /home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Simple_window.h \
- /home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.h \
- /home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.h \
- /home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/make_fractal.h
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Simple_window.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/make_fractal.h

@@ -1,5 +1,5 @@
 CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o: \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.cpp \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/istream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd \
@@ -148,8 +148,8 @@ CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/GUI.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Graph.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -194,8 +194,8 @@ CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o: \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Point.h \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/fltk.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Point.h \
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/fltk.h \
  /usr/include/FL/Enumerations.H /usr/include/FL/abi-version.h \
  /usr/include/FL/Fl_Export.H /usr/include/FL/fl_types.h \
  /usr/include/FL/Fl.H /usr/include/FL/Fl_Export.H \
@@ -231,4 +231,4 @@ CMakeFiles/fltk_graph.dir/Graph_lib/GUI.cpp.o: \
  /usr/include/FL/Fl_Pixmap.H /usr/include/FL/Fl_RGB_Image.H \
  /usr/include/FL/Fl_GIF_Image.H /usr/include/FL/Fl_Pixmap.H \
  /usr/include/FL/Fl_JPEG_Image.H /usr/include/FL/Fl_PNG_Image.H \
- /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.h
+ /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/Graph_lib/Window.h

@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build -I/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice -I/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build/QT_practice_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -g -fPIC -std=gnu++11 -o CMakeFiles/QT_practice.dir/QT_practice_autogen/mocs_compilation.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build/QT_practice_autogen/mocs_compilation.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build/QT_practice_autogen/mocs_compilation.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build -I/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice -I/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build/QT_practice_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -g -fPIC -std=gnu++11 -o CMakeFiles/QT_practice.dir/main.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/main.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/main.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build -I/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice -I/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/build/QT_practice_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -g -fPIC -std=gnu++11 -o CMakeFiles/QT_practice.dir/mainwindow.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/mainwindow.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Books/QT_practice/mainwindow.cpp"
+}
+]

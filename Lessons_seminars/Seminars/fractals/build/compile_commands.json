@@ -1,27 +1,27 @@
 [
 {
-  "directory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp",
-  "file": "/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp"
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp"
 },
 {
-  "directory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp",
-  "file": "/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp"
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp"
 },
 {
-  "directory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/fractals.dir/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp",
-  "file": "/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp"
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fractals.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp"
 },
 {
-  "directory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/fractals.dir/main.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/main.cpp",
-  "file": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/main.cpp"
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fractals.dir/main.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/main.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/main.cpp"
 },
 {
-  "directory": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/fractals.dir/make_fractal.cpp.o -c /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/make_fractal.cpp",
-  "file": "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/make_fractal.cpp"
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fractals.dir/make_fractal.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/make_fractal.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fractals/make_fractal.cpp"
 }
 ]

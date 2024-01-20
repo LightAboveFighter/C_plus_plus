@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph
-BuildDirectory: /home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build
+SourceDirectory: /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph
+BuildDirectory: /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/admin/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph"
+ConfigureCommand: "/usr/bin/cmake" "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_graph"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

@@ -1,5 +1,5 @@
-#include "/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.h"
-#include "/home/admin/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Simple_window.h"
+#include "/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.h"
+#include "/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Simple_window.h"
 #include "make_fractal.h"
 
 using namespace Graph_lib;

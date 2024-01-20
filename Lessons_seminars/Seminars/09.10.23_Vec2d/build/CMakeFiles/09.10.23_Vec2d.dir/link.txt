@@ -1,1 +1,0 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/09.10.23_Vec2d.dir/main.cpp.o CMakeFiles/09.10.23_Vec2d.dir/Vec2d.cpp.o -o 09.10.23_Vec2d 
