@@ -29,20 +29,11 @@ public:
         return lines[num];
     }
 
-    auto size() {
-        if (is_square()) return lines.size();
-        throw std::runtime_error("Matrix must be square");
-    }
-
-    auto vert_size() {
+    const auto size() {
         return lines.size();
     }
 
-    auto horis_size() {
-        return lines[0].size();
-    }
-
-    bool is_square() {
+    const bool is_square() {
         int s = lines[0].size();
         if (s != lines.size() ) {
             return false;
@@ -55,8 +46,8 @@ public:
         return true;
     }
 
-    double determinant() {
-        if (!is_square()) throw("The matrix mustbe square");
+    const T determinant() {
+        if (!is_square()) throw("The matrix must be square");
         double ans = 0;
         for (int i = 0; i < lines.size(); i++) {
             double val = lines[0][i];
@@ -79,22 +70,66 @@ public:
         return ans;
     }
 
-    Matrix operator* (Matrix& m) {
+    Matrix& transpose() {
+        Matrix<T>* ans = new Matrix<T>(lines[0].size(), lines.size());
+        std::vector<std::vector<T>> columns = std::vector<std::vector<T>>(lines[0].size(), std::vector<T>(lines.size(), T()));
+        for (int i = 0; i < int(lines.size()); i++) {
+            for (int j = 0; j < int(lines[0].size()); j++) {
+                columns[j][i] = lines[i][j];
+            }
+        }
+        ans->lines = columns;
+        return *ans;
+    }
+
+    const double minor(unsigned line, unsigned column) {
+        if (!is_square()) throw std::runtime_error("Minor exists only for square matrixes");
+        int sz = lines.size();
+        Matrix<T> ans(sz-1, sz-1);
+        for (int i = 0; i < int(sz); i++) {
+            for (int j = 0; j < int(sz); j++) {
+                if (i == line || j == column) {
+                    continue;
+                }
+                if (i > line || j > column) {
+                    ans[i-1][j-1] = lines[i][j];
+                } else {
+                    ans[i][j] = lines[i][j];
+                }
+            }
+        }
+        
+        return ans.determinant();
+    }
+
+    Matrix& inverse() {
+        if (determinant() == 0) throw std::runtime_error("Inverse matrix doesn't exist");
+
+    }
+
+    const Matrix operator+ (Matrix& m) {
+        if (lines.size() != m.size() || lines[0].size() != m[0].size()) throw std::runtime_error("Matrixes must have same size");
+        Matrix<T> ans(lines.size(), lines[0].size());
+        for (int i = 0; i < int(lines.size()); i++) {
+            for (int j = 0; j < int(lines[0].size()); j++) {
+                ans[i][j] += lines[i][j] + m[i][j];
+            }
+        }
+        return ans;
+    }
+
+    const Matrix operator* (Matrix& m) {
         auto f_size = lines.size();
         auto s_size = m.lines[0].size();
         auto p_mult = lines[0].size();
         if (!(p_mult == m.lines.size())) throw std::runtime_error("Matrixes must be correct for multiplication");
         Matrix<T> ans(f_size, s_size);
 
-        for (int i =0; i < int(f_size); i++) {
-            for (int j = 0; j < int(s_size); j++) {
-                for (int hor_mult = 0; hor_mult < int(s_size); hor_mult++) {
-                    for ( int k = 0; k < int( p_mult ); k++) {
-                        ans[hor_mult][j] += lines[j][k] * m[k][hor_mult];
-                        std::cout << lines[j][k] << " " << m[k][hor_mult] << " " << hor_mult << " " << j << std::endl;
-                    }
+        for (int i = 0; i < int(f_size); i++) {
+            for ( int j = 0; j < int(s_size); j++) {
+                for ( int k = 0; k < int(p_mult); k++) {
+                    ans[i][j] += lines[i][k] * m[k][j];
                 }
-
             }
         }
 
@@ -102,8 +137,8 @@ public:
 
     }
 
-    friend std::ostream& operator<< (std::ostream& o, Matrix<T>& m) {
-        for (int i = 0; i < int(m.vert_size()); i++) {
+    friend std::ostream& operator<< (std::ostream& o, const Matrix<T>& m) {
+        for (int i = 0; i < int(m.lines.size()); i++) {
             o << "| " << m.lines[i] << " |" << std::endl;
         }
         return o;
@@ -112,6 +147,4 @@ public:
 private:
     std::vector< std::vector< T > > lines{std::vector(4, std::vector(4, T()))};
 };
-
-
 #endif
