@@ -1,0 +1,7 @@
+# ninja log v5
+7	2819	7278376660834714	CMakeFiles/HM_calculator.dir/ierarchy.cpp.obj	28b48f5f16c44e8a
+13	2854	7278376661175097	CMakeFiles/HM_calculator.dir/variables.cpp.obj	eb1fbec4e160b4c1
+17	2866	7278376661305213	CMakeFiles/HM_calculator.dir/input_stream.cpp.obj	ba8662ad79c699af
+10	2911	7278376661751261	CMakeFiles/HM_calculator.dir/token.cpp.obj	50ab1f44c4688c66
+3	3077	7278376663422507	CMakeFiles/HM_calculator.dir/main.cpp.obj	3a4b78c26f139b6c
+3077	3269	7278376665288406	HM_calculator.exe	a28c4743a5e74ff1

@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/HM_calculator.dir/main.cpp.o -c /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/main.cpp",
+  "file": "/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/main.cpp"
+},
+{
+  "directory": "/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/HM_calculator.dir/ierarchy.cpp.o -c /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/ierarchy.cpp",
+  "file": "/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/ierarchy.cpp"
+},
+{
+  "directory": "/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/HM_calculator.dir/token.cpp.o -c /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/token.cpp",
+  "file": "/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/token.cpp"
+},
+{
+  "directory": "/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/HM_calculator.dir/variables.cpp.o -c /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/variables.cpp",
+  "file": "/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/variables.cpp"
+},
+{
+  "directory": "/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/HM_calculator.dir/input_stream.cpp.o -c /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/input_stream.cpp",
+  "file": "/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/Homework/HM_calculator/input_stream.cpp"
+}
+]

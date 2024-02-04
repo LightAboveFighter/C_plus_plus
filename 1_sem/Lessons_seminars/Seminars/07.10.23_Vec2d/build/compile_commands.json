@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/MIPT/C_plus_plus/Lessons_seminars/Seminars/07.10.23_Vec2d/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\07.10.23_Vec2d.dir\\07.10.23_Vec2d.cpp.obj -c D:\\MIPT\\C_plus_plus\\Lessons_seminars\\Seminars\\07.10.23_Vec2d\\07.10.23_Vec2d.cpp",
+  "file": "D:/MIPT/C_plus_plus/Lessons_seminars/Seminars/07.10.23_Vec2d/07.10.23_Vec2d.cpp",
+  "output": "CMakeFiles/07.10.23_Vec2d.dir/07.10.23_Vec2d.cpp.obj"
+},
+{
+  "directory": "D:/MIPT/C_plus_plus/Lessons_seminars/Seminars/07.10.23_Vec2d/build",
+  "command": "C:\\PROGRA~1\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\07.10.23_Vec2d.dir\\Vec2d.cpp.obj -c D:\\MIPT\\C_plus_plus\\Lessons_seminars\\Seminars\\07.10.23_Vec2d\\Vec2d.cpp",
+  "file": "D:/MIPT/C_plus_plus/Lessons_seminars/Seminars/07.10.23_Vec2d/Vec2d.cpp",
+  "output": "CMakeFiles/07.10.23_Vec2d.dir/Vec2d.cpp.obj"
+}
+]

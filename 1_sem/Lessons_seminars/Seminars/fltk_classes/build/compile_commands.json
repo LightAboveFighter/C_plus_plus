@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_classes/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fltk_classes.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Graph.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_classes/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fltk_classes.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/GUI.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_classes/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fltk_classes.dir/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/add_libraries/Graph_lib/Window.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_classes/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fltk_classes.dir/Classes.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_classes/Classes.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_classes/Classes.cpp"
+},
+{
+  "directory": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_classes/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/fltk_classes.dir/main.cpp.o -c /home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_classes/main.cpp",
+  "file": "/home/alexunder/Documents/MIPT/C_plus_plus/Lessons_seminars/Seminars/fltk_classes/main.cpp"
+}
+]

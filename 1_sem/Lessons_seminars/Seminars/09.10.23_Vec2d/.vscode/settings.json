@@ -1,0 +1,9 @@
+{
+    "cmake.configureOnOpen": true
+    // "clang-format.executable": "/usr/bin/clang",
+    // "editor.formatOnSave": true,
+    // "editor.defaultFormatter": "ms-vscode.cpptools",
+    // "C_Cpp.clang_format_path": "",
+    // "C_Cpp.formatting": "clangFormat",
+    // "C_Cpp.clang_format_style": ""
+}

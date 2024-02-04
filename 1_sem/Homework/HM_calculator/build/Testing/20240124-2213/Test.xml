@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-ninja"
+	BuildStamp="20240124-2213-Experimental"
+	Name="DESKTOP-IG8GSKD"
+	Generator="ctest-3.28.1"
+	CompilerName="C:/Program Files/winlibs-x86_64-posix-seh-gcc-13.2.0-llvm-17.0.6-mingw-w64ucrt-11.0.1-r4/mingw64/bin/c++.exe"
+	CompilerVersion="13.2.0"
+	OSName="Windows"
+	Hostname="DESKTOP-IG8GSKD"
+	OSRelease=" Professional"
+	OSVersion=" (Build 9200)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="0"
+	ModelID="0"
+	ProcessorCacheSize="0"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="18698"
+	TotalPhysicalMemory="15754"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1797"
+	>
+	<Testing>
+		<StartDateTime>Jan 25 01:13 RTZ 2 ([NON-UTF-8-BYTE-0xE7][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xEC][NON-UTF-8-BYTE-0xE0])</StartDateTime>
+		<StartTestTime>1706134433</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jan 25 01:13 RTZ 2 ([NON-UTF-8-BYTE-0xE7][NON-UTF-8-BYTE-0xE8][NON-UTF-8-BYTE-0xEC][NON-UTF-8-BYTE-0xE0])</EndDateTime>
+		<EndTestTime>1706134433</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
