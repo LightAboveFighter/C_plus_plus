@@ -20,7 +20,13 @@ class Matrix4x4 {
 public:
     Matrix4x4(){};
     static_assert(std::is_floating_point<T>::value || std::is_integral<T>::value, "The Matrix4x4 type must be integral");
-    Matrix4x4(std::vector<std::vector<T>> t) : lines{t} { if ( t.size() != size || t[0].size() != size ) throw std::runtime_error("Wrong vector's size")};
+    Matrix4x4(std::vector<std::vector<T>> t) : lines{t} {
+        if (t.size() == 1) return;
+        int s = t[0].size();
+        for (int i = 1; i < int(t.size()); i++) {
+            if (s != t[i].size()) throw std::runtime_error("Matrix's lines must have same size");
+        }
+    };
     Matrix4x4(int lines_num, int columns_num, T value = T()) : lines{std::vector(lines_num, std::vector(columns_num, value))} {
             if ( lines_num <= 0 || columns_num <= 0 ) throw std::runtime_error("Matrix4x4es size must be positive");
             };
@@ -145,7 +151,6 @@ public:
     }
 
 private:
-    int size{4};
     std::vector< std::vector< T > > lines{std::vector(size, std::vector(size, T()))};
 };
 #endif
