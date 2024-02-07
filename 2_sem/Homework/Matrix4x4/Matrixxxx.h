@@ -93,11 +93,27 @@ public:
     // }
 
     const T determinant() {
+        // T ans;
+        // for (int s = 0; s < size; s++) {
+        //     ans += lines[0][s] * ( -1 + 2*(s%2==0) ) * minor(0, s);
+        // }
+        // return ans; 
         T ans;
-        for (int s = 0; s < size; s++) {
-            ans += lines[0][s] * ( -1 + 2*(s%2==0) ) * minor(0, s);
+        for (int i = 0; i < lines.size(); i++) {
+            double val = lines[0][i];
+            for (int j = 1; j < lines.size(); j++) {
+                val *= lines[j][(i+j)%lines.size()];
+            }
+            ans += val;
         }
-        return ans; 
+        for (int i = 0; i < lines.size(); i++) {
+            double val = lines[lines.size()-1][i];
+            for (int j = 1; j < lines.size(); j++) {
+                val *= lines[lines.size()-j-1][(i+j)%lines.size()];
+            }
+            ans -= val;
+        }
+        return ans;
     }
 
     const T minor(unsigned line, unsigned column) {
