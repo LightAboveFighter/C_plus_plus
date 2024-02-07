@@ -3,7 +3,6 @@
 
 #include <vector>
 #include <iostream>
-#include <tuple>
 
 template<typename T, typename A>
 std::ostream& operator<< (std::ostream& o, const std::vector<T, A>& v) {
@@ -54,17 +53,18 @@ public:
 
     const T determinant() {
         if (!is_square()) throw("The Matrix4x4 must be square");
-        T ans;
-        for (int i = 0; i < lines.size(); i++) {
+        T ans = T();
+        for (int i = 0; i < int(lines.size()); i++) {
             double val = lines[0][i];
-            for (int j = 1; j < lines.size(); j++) {
+            for (int j = 1; j < int(lines.size()); j++) {
                 val *= lines[j][(i+j)%lines.size()];
             }
             ans += val;
         }
-        for (int i = 0; i < lines.size(); i++) {
+        std::cout << std::endl;
+        for (int i = 0; i < int(lines.size()); i++) {
             double val = lines[lines.size()-1][i];
-            for (int j = 1; j < lines.size(); j++) {
+            for (int j = 1; j < int(lines.size()); j++) {
                 val *= lines[lines.size()-j-1][(i+j)%lines.size()];
             }
             ans -= val;
@@ -95,8 +95,7 @@ public:
                 }
                 ans[i-(i>line)][j-(j>column)] = lines[i][j];
             }
-        }
-        
+        }        
         return ans.determinant();
     }
 

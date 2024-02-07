@@ -20,5 +20,5 @@ int main(){
     Matrix4x4<int> weq = mm+ww;
     ww = ww.transpose();
     std::vector<int> v{1, 3, 4, 5};
-    std::cout << m.determinant();
+    std::cout << m << m.determinant() << std::endl << m.minor(3, 3) << std::endl;
 }
