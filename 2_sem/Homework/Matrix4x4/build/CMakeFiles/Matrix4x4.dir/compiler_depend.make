@@ -181,7 +181,7 @@ CMakeFiles/Matrix4x4.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  ../Matrix.h \
+  ../Matrix4x4.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
@@ -209,7 +209,7 @@ CMakeFiles/Matrix4x4.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/11/vector:
 
-../Matrix.h:
+../Matrix4x4.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 

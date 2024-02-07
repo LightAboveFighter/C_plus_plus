@@ -837,12 +837,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 CMakeFiles/Matrix4x4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/build/CMakeFiles --progress-num=1,2,3 "Built target Matrix4x4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/build/CMakeFiles --progress-num=1,2 "Built target Matrix4x4"
 .PHONY : CMakeFiles/Matrix4x4.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Matrix4x4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Matrix4x4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/build/CMakeFiles 0
 .PHONY : CMakeFiles/Matrix4x4.dir/rule
