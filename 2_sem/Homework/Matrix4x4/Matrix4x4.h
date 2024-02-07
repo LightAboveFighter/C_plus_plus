@@ -1,5 +1,5 @@
-#ifndef _MATRIX_H_
-#define _MATRIX_H_
+#ifndef _Matrix4x4_H_
+#define _Matrix4x4_H_
 
 #include <vector>
 #include <iostream>
@@ -16,13 +16,13 @@ std::ostream& operator<< (std::ostream& o, const std::vector<T, A>& v) {
 }
 
 template<typename T>
-class Matrix {
+class Matrix4x4 {
 public:
-    Matrix(){};
-    static_assert(std::is_floating_point<T>::value || std::is_integral<T>::value, "The matrix type must be integral");
-    Matrix(std::vector<std::vector<T>> t) : lines{t} {};
-    Matrix(int lines_num, int columns_num, T value = T()) : lines{std::vector(lines_num, std::vector(columns_num, value))} {
-            if ( lines_num <= 0 || columns_num <= 0 ) throw std::runtime_error("Matrixes size must be positive");
+    Matrix4x4(){};
+    static_assert(std::is_floating_point<T>::value || std::is_integral<T>::value, "The Matrix4x4 type must be integral");
+    Matrix4x4(std::vector<std::vector<T>> t) : lines{t} { if ( t.size() != size || t[0].size() != size ) throw std::runtime_error("Wrong vector's size")};
+    Matrix4x4(int lines_num, int columns_num, T value = T()) : lines{std::vector(lines_num, std::vector(columns_num, value))} {
+            if ( lines_num <= 0 || columns_num <= 0 ) throw std::runtime_error("Matrix4x4es size must be positive");
             };
 
     std::vector<T>& operator[] (unsigned num) {
@@ -47,31 +47,27 @@ public:
     }
 
     const T determinant() {
-        if (!is_square()) throw("The matrix must be square");
-        double ans = 0;
+        if (!is_square()) throw("The Matrix4x4 must be square");
+        T ans;
         for (int i = 0; i < lines.size(); i++) {
             double val = lines[0][i];
-            std::cout << val << std::endl;
             for (int j = 1; j < lines.size(); j++) {
                 val *= lines[j][(i+j)%lines.size()];
-                std::cout << lines[j][(i+j)%lines.size()] << std::endl;
             }
             ans += val;
         }
         for (int i = 0; i < lines.size(); i++) {
             double val = lines[lines.size()-1][i];
-            std::cout << val << std::endl;
             for (int j = 1; j < lines.size(); j++) {
                 val *= lines[lines.size()-j-1][(i+j)%lines.size()];
-                std::cout << lines[lines.size()-j-1][(i+j)%lines.size()] << std::endl;
             }
             ans -= val;
         }
         return ans;
     }
 
-    Matrix& transpose() {
-        Matrix<T>* ans = new Matrix<T>(lines[0].size(), lines.size());
+    Matrix4x4& transpose() {
+        Matrix4x4<T>* ans = new Matrix4x4<T>(lines[0].size(), lines.size());
         std::vector<std::vector<T>> columns = std::vector<std::vector<T>>(lines[0].size(), std::vector<T>(lines.size(), T()));
         for (int i = 0; i < int(lines.size()); i++) {
             for (int j = 0; j < int(lines[0].size()); j++) {
@@ -82,34 +78,39 @@ public:
         return *ans;
     }
 
-    const double minor(unsigned line, unsigned column) {
-        if (!is_square()) throw std::runtime_error("Minor exists only for square matrixes");
+    const T minor(unsigned line, unsigned column) {
+        if (!is_square()) throw std::runtime_error("Minor exists only for square Matrix4x4es");
         int sz = lines.size();
-        Matrix<T> ans(sz-1, sz-1);
+        Matrix4x4<T> ans(sz-1, sz-1);
         for (int i = 0; i < int(sz); i++) {
             for (int j = 0; j < int(sz); j++) {
                 if (i == line || j == column) {
                     continue;
                 }
-                if (i > line || j > column) {
-                    ans[i-1][j-1] = lines[i][j];
-                } else {
-                    ans[i][j] = lines[i][j];
-                }
+                ans[i-(i>line)][j-(j>column)] = lines[i][j];
             }
         }
         
         return ans.determinant();
     }
 
-    Matrix& inverse() {
-        if (determinant() == 0) throw std::runtime_error("Inverse matrix doesn't exist");
+    Matrix4x4& union_Matrix4x4() {
+        Matrix4x4<T>* ans = new Matrix4x4<T>(lines.size(), lines[0].size());
+        for (int i = 0; i < int(lines.size()); i++) {
+            for (int j = 0; j < int(lines[0].size()); j++) {
+
+            }
+        }
+    }
+
+    Matrix4x4& inverse() {
+        if (determinant() == 0 || !is_square()) throw std::runtime_error("Inverse Matrix4x4 doesn't exist");
 
     }
 
-    const Matrix operator+ (Matrix& m) {
-        if (lines.size() != m.size() || lines[0].size() != m[0].size()) throw std::runtime_error("Matrixes must have same size");
-        Matrix<T> ans(lines.size(), lines[0].size());
+    const Matrix4x4 operator+ (Matrix4x4& m) {
+        if (lines.size() != m.size() || lines[0].size() != m[0].size()) throw std::runtime_error("Matrix4x4es must have same size");
+        Matrix4x4<T> ans(lines.size(), lines[0].size());
         for (int i = 0; i < int(lines.size()); i++) {
             for (int j = 0; j < int(lines[0].size()); j++) {
                 ans[i][j] += lines[i][j] + m[i][j];
@@ -118,12 +119,12 @@ public:
         return ans;
     }
 
-    const Matrix operator* (Matrix& m) {
+    const Matrix4x4 operator* (Matrix4x4& m) {
         auto f_size = lines.size();
         auto s_size = m.lines[0].size();
         auto p_mult = lines[0].size();
-        if (!(p_mult == m.lines.size())) throw std::runtime_error("Matrixes must be correct for multiplication");
-        Matrix<T> ans(f_size, s_size);
+        if (!(p_mult == m.lines.size())) throw std::runtime_error("Matrix4x4es must be correct for multiplication");
+        Matrix4x4<T> ans(f_size, s_size);
 
         for (int i = 0; i < int(f_size); i++) {
             for ( int j = 0; j < int(s_size); j++) {
@@ -132,12 +133,11 @@ public:
                 }
             }
         }
-
         return ans;
 
     }
 
-    friend std::ostream& operator<< (std::ostream& o, const Matrix<T>& m) {
+    friend std::ostream& operator<< (std::ostream& o, const Matrix4x4<T>& m) {
         for (int i = 0; i < int(m.lines.size()); i++) {
             o << "| " << m.lines[i] << " |" << std::endl;
         }
@@ -145,6 +145,7 @@ public:
     }
 
 private:
-    std::vector< std::vector< T > > lines{std::vector(4, std::vector(4, T()))};
+    int size{4};
+    std::vector< std::vector< T > > lines{std::vector(size, std::vector(size, T()))};
 };
 #endif
