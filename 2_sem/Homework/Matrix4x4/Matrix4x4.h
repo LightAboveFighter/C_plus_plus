@@ -4,16 +4,6 @@
 #include <vector>
 #include <iostream>
 
-template<typename T, typename A>
-std::ostream& operator<< (std::ostream& o, const std::vector<T, A>& v) {
-    o << '(';
-    for (int i = 0; i < int(v.size()) - 1; i++) {
-        o << v[i] << ',';
-    }
-    o << v.back() << ')';
-    return o;
-}
-
 template<typename T>
 class Matrix4x4 {
 public:
@@ -152,4 +142,15 @@ public:
 private:
     std::vector< std::vector< T > > lines{std::vector(size, std::vector(size, T()))};
 };
+
+template<typename T, typename A>
+std::ostream& operator<< (std::ostream& o, const std::vector<T, A>& v) {
+    o << '(';
+    for (int i = 0; i < int(v.size()) - 1; i++) {
+        o << v[i] << ',';
+    }
+    o << v.back() << ')';
+    return o;
+}
+
 #endif
