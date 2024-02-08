@@ -98,12 +98,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Matrixxxx.cpp",
+			"path" : "Matrix4x4.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Matrixxxx.h",
+			"path" : "Matrix4x4.h",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -83,30 +83,30 @@ CMakeFiles/Matrix4x4.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Matrix4x4.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/main.cpp -o CMakeFiles/Matrix4x4.dir/main.cpp.s
 
-CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.o: CMakeFiles/Matrix4x4.dir/flags.make
-CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.o: ../Matrixxxx.cpp
-CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.o: CMakeFiles/Matrix4x4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.o -MF CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.o.d -o CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.o -c /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/Matrixxxx.cpp
+CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o: CMakeFiles/Matrix4x4.dir/flags.make
+CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o: ../Matrix4x4.cpp
+CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o: CMakeFiles/Matrix4x4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o -MF CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o.d -o CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o -c /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/Matrix4x4.cpp
 
-CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/Matrixxxx.cpp > CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.i
+CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/Matrix4x4.cpp > CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.i
 
-CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/Matrixxxx.cpp -o CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.s
+CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/Matrix4x4.cpp -o CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.s
 
 # Object files for target Matrix4x4
 Matrix4x4_OBJECTS = \
 "CMakeFiles/Matrix4x4.dir/main.cpp.o" \
-"CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.o"
+"CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o"
 
 # External object files for target Matrix4x4
 Matrix4x4_EXTERNAL_OBJECTS =
 
 Matrix4x4: CMakeFiles/Matrix4x4.dir/main.cpp.o
-Matrix4x4: CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.o
+Matrix4x4: CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o
 Matrix4x4: CMakeFiles/Matrix4x4.dir/build.make
 Matrix4x4: CMakeFiles/Matrix4x4.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Matrix4x4"

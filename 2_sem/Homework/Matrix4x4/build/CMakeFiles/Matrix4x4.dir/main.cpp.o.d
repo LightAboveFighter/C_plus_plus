@@ -146,7 +146,7 @@ CMakeFiles/Matrix4x4.dir/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/Matrixxxx.h \
+ /media/alexunder/09C1B27DA5EB573A/MIPT/C_plus_plus/2_sem/Homework/Matrix4x4/Matrix4x4.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \

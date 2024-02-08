@@ -1,13 +1,13 @@
 #include <iostream>
-#include "Matrixxxx.h"
+#include "Matrix4x4.h"
 
 int main(){
-    Matrixxxx<double> m = std::vector<std::vector<double>>{ {2,  5,  1,  3},
+    Matrix4x4<double> m = std::vector<std::vector<double>>{ {2,  5,  1,  3},
                                                             {4,  1,  7,  9},
                                                             {94,  10, 11., 12},
                                                             {1231, 14, 15, 16}
     };
-    Matrixxxx<double> mm = std::vector<std::vector<double>>{ {2,  5,  1,  3},
+    Matrix4x4<double> mm = std::vector<std::vector<double>>{ {2,  5,  1,  3},
                                                             {4,  1,  7,  9},
                                                             {94,  10, 11., 12},
                                                             {1231, 14, 15, 16}

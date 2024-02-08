@@ -523,29 +523,29 @@ Matrix4x4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/build
 .PHONY : Matrix4x4/fast
 
-Matrixxxx.o: Matrixxxx.cpp.o
-.PHONY : Matrixxxx.o
+Matrix4x4.o: Matrix4x4.cpp.o
+.PHONY : Matrix4x4.o
 
 # target to build an object file
-Matrixxxx.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.o
-.PHONY : Matrixxxx.cpp.o
+Matrix4x4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o
+.PHONY : Matrix4x4.cpp.o
 
-Matrixxxx.i: Matrixxxx.cpp.i
-.PHONY : Matrixxxx.i
+Matrix4x4.i: Matrix4x4.cpp.i
+.PHONY : Matrix4x4.i
 
 # target to preprocess a source file
-Matrixxxx.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.i
-.PHONY : Matrixxxx.cpp.i
+Matrix4x4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.i
+.PHONY : Matrix4x4.cpp.i
 
-Matrixxxx.s: Matrixxxx.cpp.s
-.PHONY : Matrixxxx.s
+Matrix4x4.s: Matrix4x4.cpp.s
+.PHONY : Matrix4x4.s
 
 # target to generate assembly for a file
-Matrixxxx.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/Matrixxxx.cpp.s
-.PHONY : Matrixxxx.cpp.s
+Matrix4x4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.s
+.PHONY : Matrix4x4.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -611,9 +611,9 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... Matrix4x4"
-	@echo "... Matrixxxx.o"
-	@echo "... Matrixxxx.i"
-	@echo "... Matrixxxx.s"
+	@echo "... Matrix4x4.o"
+	@echo "... Matrix4x4.i"
+	@echo "... Matrix4x4.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
