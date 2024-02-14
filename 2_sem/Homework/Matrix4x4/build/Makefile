@@ -523,30 +523,6 @@ Matrix4x4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/build
 .PHONY : Matrix4x4/fast
 
-Matrix4x4.o: Matrix4x4.cpp.o
-.PHONY : Matrix4x4.o
-
-# target to build an object file
-Matrix4x4.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.o
-.PHONY : Matrix4x4.cpp.o
-
-Matrix4x4.i: Matrix4x4.cpp.i
-.PHONY : Matrix4x4.i
-
-# target to preprocess a source file
-Matrix4x4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.i
-.PHONY : Matrix4x4.cpp.i
-
-Matrix4x4.s: Matrix4x4.cpp.s
-.PHONY : Matrix4x4.s
-
-# target to generate assembly for a file
-Matrix4x4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Matrix4x4.dir/build.make CMakeFiles/Matrix4x4.dir/Matrix4x4.cpp.s
-.PHONY : Matrix4x4.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -611,9 +587,6 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... Matrix4x4"
-	@echo "... Matrix4x4.o"
-	@echo "... Matrix4x4.i"
-	@echo "... Matrix4x4.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

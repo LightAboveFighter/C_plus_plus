@@ -3,6 +3,8 @@
 
 #include <vector>
 #include <iostream>
+#include "Column.h"
+
 
 template<typename T, typename A>
 std::ostream& operator<< (std::ostream& o, const std::vector<T, A>& v) {
@@ -17,6 +19,7 @@ std::ostream& operator<< (std::ostream& o, const std::vector<T, A>& v) {
 template<typename T>
 class Matrix4x4 {
 public:
+    const unsigned size{4};
     static_assert(std::is_floating_point<T>::value || std::is_integral<T>::value, "The Matrix4x4 type must be integral");
 
     Matrix4x4(T value = T()) : lines{std::vector(size, std::vector(size, value))} {};
@@ -120,6 +123,16 @@ public:
         return ans;    
     }
 
+    // Matrix4x4 operator= (Matrix4x4&& m) {
+    //     Matrix4x4 ans;
+    //     for (int i = 0; i < size; i++) {
+    //         for (int j = 0; j < size; j++) {
+    //             ans[i][j] = lines[i][j];
+    //         }
+    //     }
+    //     return ans;
+    // }
+
     Matrix4x4 operator+ (Matrix4x4 m) const {
         Matrix4x4<T> ans;
         for (int i = 0; i < size; i++) {
@@ -150,7 +163,7 @@ public:
         return ans;
     }
 
-    Matrix4x4 operator* (Matrix4x4 m) const {
+    Matrix4x4 operator* ( Matrix4x4& m) const {
         Matrix4x4<T> ans;
         for (int i = 0; i < size; i++) {
             for ( int j = 0; j < size; j++) {
@@ -166,55 +179,31 @@ public:
         return *this*(1/num);
     }
 
-    const Matrix4x4 operator/ (Matrix4x4 m) const {
+    const Matrix4x4 operator/ (const Matrix4x4& m) const {
         return *this*m.inverse();
     }
 
-    friend std::ostream& operator<< (std::ostream& o, const Matrix4x4<T>& m) {
-        for (int i = 0; i < m.size; i++) {
-            o << "| " << m.lines[i] << " |" << std::endl;
-        }
-        return o;
-    }
-
 private:
-    const unsigned size{4};
     std::vector<std::vector<T>> lines{std::vector(size, std::vector(size, T()))};
-
-    // T vec_minor(unsigned line, unsigned column, std::vector< std::vector<T>>& m) const {
-    //     std::vector<std::vector<T>> vec(3, std::vector<T>(3, T()));
-    //     for (int i = 0; i < size; i++) {
-    //         for (int j = 0; j < size; j++) {
-    //             if (i == line || j == column) {
-    //                 continue;
-    //             }
-    //             vec[i-(i>line)][j-(j>column)] = m[i][j];
-    //         }
-    //     }
-    //     T ans = T();
-    //     for (int i = 0; i < vec.size(); i++) {
-    //         double val = vec[0][i];
-    //         for (int j = 1; j < vec.size(); j++) {
-    //             val *= vec[j][(i+j)%vec.size()];
-    //         }
-    //         ans += val;
-    //     }
-    //     for (int i = 0; i < vec.size(); i++) {
-    //         double val = vec[vec.size()-1][i];
-    //         for (int j = 1; j < vec.size(); j++) {
-    //             val *= vec[vec.size()-j-1][(i+j)%vec.size()];
-    //         }
-    //         ans -= val;
-    //     }
-    //     return (-1 + 2*((line+column)%2==0))*ans;
-    // }
-
-    // T vec_determinant(std::vector< std::vector<T>>& m) const {
-    //     T ans = T();
-    //     for (int i = 0; i < size; i++) {
-    //         ans += m[0][i] * minor(0, i, m);
-    //     }
-    //     return ans;
-    // }
 };
+
+template<typename S, typename T>
+Column<S> operator* (Matrix4x4<T>& m, Column<S>& col) {
+    Column<S> ans;
+    for (int i = 0; i < m.size; i++) {
+        for ( int k = 0; k < m.size; k++) {
+            ans[i] += m[i][k] * col[k];
+        }
+    }
+    return ans;
+}
+
+template<typename T>
+std::ostream& operator<< (std::ostream& o, Matrix4x4<T> m) {
+    for (int i = 0; i < m.size; i++) {
+        o << "| " << m[i] << " |" << std::endl;
+    }
+    return o;
+}
+
 #endif
