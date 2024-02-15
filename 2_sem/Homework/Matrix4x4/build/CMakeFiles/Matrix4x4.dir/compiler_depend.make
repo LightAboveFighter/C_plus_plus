@@ -187,10 +187,8 @@ CMakeFiles/Matrix4x4.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  ../Column.h
+  ../Vec4.h
 
-
-../Column.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -353,6 +351,8 @@ CMakeFiles/Matrix4x4.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/include/c++/11/debug/assertions.h:
+
+../Vec4.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
